@@ -8,28 +8,34 @@ function Header() {
             num: 24,
             gain: +2,
             duration: "This Month",
-            icon: assets.dashboard
+            icon: assets.dashboard,
+            color: "green"
+
         },
         {
             head: "Avg hives Weight",
             num: "45kg",
             gain: "+1.5kg",
             duration: "avg gain",
-            icon: assets.dashboard
+            icon: assets.dashboard,
+            color: "green"
         },
         {
             head: "internal Temp",
             num: "34*c",
             gain: "stable",
             duration: "optimal range",
-            icon: assets.thermometer
+            icon: assets.thermometer,
+            color: ""
+
         },
         {
             head: "Active alerts",
             num: 2,
-            gain: "pls",
             duration: "Action required immediately",
-            icon: assets.bell
+            icon: assets.bell,
+            color: ""
+
         },
     ]
     return (
@@ -45,7 +51,7 @@ function Header() {
                     <p className="flex  gap-2 items-center h-fit p-2 font-bold bg-[#fac638] font-bold rounded-lg shadow-sm" ><img src={assets.plus} alt="" className="size-5" />log Harvest</p>
                 </div>
             </div>
-            <div className="flex gap-5 flex-wrap pt-10 justify-between">
+            <div className="flex flex-wrap pt-10 gap-2">
                 {ApiData.map((data, index) => (
                     <Card key={index} data={data} />
                 ))}
