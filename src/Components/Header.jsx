@@ -40,7 +40,7 @@ function Header() {
     ]
     return (
 
-        <div className="px-64 pt-10 ">
+        <div className="px-50 pt-10 ">
             <div className="flex justify-between ">
                 <div>
                     <h1 className="font-bold text-4xl">Apiary Overview </h1>
@@ -51,7 +51,7 @@ function Header() {
                     <p className="flex  gap-2 items-center h-fit p-2 font-bold bg-[#fac638] font-bold rounded-lg shadow-sm" ><img src={assets.plus} alt="" className="size-5" />log Harvest</p>
                 </div>
             </div>
-            <div className="flex flex-wrap pt-10 gap-2">
+            <div className="flex flex-wrap pt-10 justify-between">
                 {ApiData.map((data, index) => (
                     <Card key={index} data={data} />
                 ))}

@@ -6,7 +6,7 @@ function Card({ data }) {
     return (
         <div className="flex justify-between p-4  w-[260px] pl-2 rounded-lg shadow-lg ">
 
-            <div className={`flex flex-col gap-1 ${data.icon === assets.bell ? "text-[#e2a9a9]" : null}`}>
+            <div className={`flex flex-col ${data.icon === assets.bell ? "text-[#e2a9a9]" : null}`}>
                 <h1>{data.head}</h1>
                 <p className="text-2xl font-bold text-black " >{data.num}</p>
                 <div className="flex gap-2">
