@@ -5,7 +5,7 @@ function HealthMatrixCard({ card }) {
     return (
         <div className=" pt-1 shadow-lg  ">
             <div className="flex justify-between text-start gap-1  px-2 py-4">
-                <p >{card.id}</p>
+                <p className="text-start">{card.id}</p>
                 <p> {card.status}</p>
                 <p>
                     {card.pattern}

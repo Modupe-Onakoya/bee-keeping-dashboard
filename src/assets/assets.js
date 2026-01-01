@@ -13,8 +13,10 @@ import thermometer from './thermometer.png'
 import warning from './warning.png'
 import settings from './settings.png'
 import aparist from './aparist.jpeg'
+import cupboard from './cupboard.png'
+import trend from './trend.png'
 
 const assets = {
-    bar_chart, bee_logo, bell, bug, checkup, dashboard, download, hourglass, octagon, plus, refresh, thermometer, warning, settings, aparist
+    bar_chart, bee_logo, bell, bug, checkup, dashboard, download, hourglass, octagon, plus, refresh, thermometer, warning, settings, aparist, cupboard, trend
 }
 export default assets;
