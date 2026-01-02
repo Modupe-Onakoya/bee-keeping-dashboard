@@ -1,3 +1,4 @@
+import assets from "../assets/assets"
 
 function MatrixHeader() {
 
@@ -7,11 +8,11 @@ function MatrixHeader() {
                 <h1>
                     Hive Health Matrix
                 </h1>
-                <div className="flex gap-10 pr-82">
+                <div className="flex gap-20 pr-45">
                     <p className="">
                         View all Hives
                     </p>
-                    <p>Threat Monitor</p>
+                    <p className="flex items-center gap-2">  <img src={assets.danger} alt="" className="size-4" />  Threat Monitor</p>
                 </div>
             </div>
         </>

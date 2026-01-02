@@ -10,7 +10,8 @@ function Header() {
             duration: "This Month",
             icon: assets.dashboard,
             color: "green",
-            img: assets.trend
+            img: assets.trend,
+            bg: assets.octagon
 
         },
         {
@@ -45,7 +46,7 @@ function Header() {
             <div className="flex justify-between ">
                 <div>
                     <h1 className="font-bold text-3xl">Apiary Overview </h1>
-                    <p>Monitoring Station <span>.</span> 24 Active Hives <span>.</span> Last synced 2m ago </p>
+                    < p className="text-sm text-gray-600">Monitoring Station <span>.</span> 24 Active Hives <span>.</span> Last synced 2m ago </p>
                 </div>
                 <div className="flex gap-5 text-sm">
                     <p className="flex gap-2 items-center h-fit px-2 py-1 inset-shadow-2xs rounded-sm shadow-sm" ><img src={assets.download} alt="" className="size-3" />Export data</p>

@@ -8,46 +8,65 @@ function HealthMatrix() {
             id: "HIVE ID",
             status: "QUEEN STATUS",
             pattern: "BROOD PATTERN",
-            inspection: "LAST INSPECTION"
-        }, {
+            inspection: "LAST INSPECTION",
+        },
+        {
             id: "Hive 001",
             status: "Healthy (Active)",
             pattern: "Solid",
-            inspection: "2 days ago"
+            inspection: "2 days ago",
+            img: "green",
+            color: "bg-yellow-100"
 
         },
         {
             id: "Hive 002",
             status: "Superseded",
-            pattern: "Spottu",
-            inspection: "1 day ago"
+            pattern: "Spott",
+            inspection: "1 day ago",
+            img: "yellow",
+            color: "bg-gray-100"
         }, {
             id: "Hive 003",
             status: "Healthy (Active)",
             pattern: "Solid",
-            inspection: "5 days ago"
+            inspection: "5 days ago",
+            img: "green",
+            color: "bg-yellow-100"
+
+
+
         }, {
             id: "Hive 004",
             status: "check required",
             pattern: "irregular",
-            inspection: "Today"
+            inspection: "Today",
+            img: "red",
+            color: "bg-red-200"
+
         },
     ]
     const threatMonitor = [
         {
             head: "HIGH PROBABILITY",
             head2: "Varroa Milte Detected",
-            color: "red"
+            color: "text-red-700",
+            bg: "oklch(0.98 0.016 73.684)"
+
         },
         {
             head: "WARNING",
             head2: "High Humidity Spike",
-            color: "yellow"
+            color: "text-yellow-700",
+            bg: "oklch(0.98 0.016 73.684)"
+
 
         }, {
             head: "NOTICE",
             head2: "Weather Alert",
-            color: "blue"
+            color: "text-gray-500",
+            bg: "gray-500"
+
 
         },
     ]
@@ -55,8 +74,9 @@ function HealthMatrix() {
         <div className="px-50  py-10">
             <MatrixHeader />
 
-            <div className="flex justify-between gap-12">
-                <div className="w-[80%] over-flow:hidden " >
+            <div className="flex justify-between gap-5">
+
+                <div className="w-[95%] over-flow:hidden " >
                     {matrixs.map((matrix, index) => (
 
                         <HealthMatrixCard key={index} card={matrix} />
