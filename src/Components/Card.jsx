@@ -4,9 +4,9 @@ function Card({ data }) {
 
 
     return (
-        <div className=" relative flex justify-between p-4  w-[260px] pl-2 rounded-lg shadow-lg  ">
+        <div className=" relative flex justify-between p-4  w-[260px] pl-2 rounded-lg shadow-lg ">
 
-            <div className={`flex flex-col ${data.icon === assets.bell ? "text-red-600" : null} -2xl bg-[#fff]`} >
+            <div className={`flex flex-col ${data.icon === assets.bell ? "text-red-600" : null} -2xl bg-[#fff] dark:bg-white `} >
                 {data.bg ? <img src={data.bg} className="absolute size-18 bottom-0 right-0 -z-100 " /> : null}
                 <h1>{data.head}</h1>
                 <p className={`text-2xl font-bold text-black  ${data.icon === assets.bell ? "text-red-600" : null}`} >{data.num}</p>

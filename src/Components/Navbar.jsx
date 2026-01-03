@@ -1,10 +1,11 @@
 import assets from "../assets/assets"
+import DarkTheme from "./darkTheme"
 
-function Navbar() {
+function Navbar({ theme, setTheme }) {
     return (
-        <div className="flex px-20 py-5 border-b-[transparent] shadow-sm w-full text-sm">
+        <div className="flex px-20 py-5 border-b-[transparent] w-full text-sm dark:bg-black dark:text-white inset-shadow-sm shadow-white">
 
-            <div className="flex justify-between w-full ">
+            <div className="flex justify-between w-full  ">
                 <div className="flex items-center">
                     <img src={assets.bee_logo} alt="" className="size-8" />
                     <p className="text-sm font-bold ">Apiary Manager <span className="block text-[#607afb]">Command center</span></p>
@@ -20,8 +21,7 @@ function Navbar() {
 
 
                 <div className="flex gap-5">
-                    <div className="flex items-center">    <img src={assets.settings} alt="" className="size-4 flex items-center" /></div>
-
+                    <DarkTheme theme={theme} setTheme={setTheme} />
                     <p className="font-bold">Modupe BeeKeeper <span className="block text-end font-normal">Head Aparist</span></p>
                     <img src={assets.aparist} alt="" className="size-10 rounded-full " />
 

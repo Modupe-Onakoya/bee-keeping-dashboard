@@ -16,8 +16,11 @@ import aparist from './aparist.jpeg'
 import cupboard from './cupboard.png'
 import trend from './trend.png'
 import danger from './danger.png'
+import moon from './moon_icon.svg'
+import sun from './sun_icon.svg'
+
 
 const assets = {
-    bar_chart, bee_logo, bell, bug, checkup, dashboard, download, hourglass, octagon, plus, refresh, thermometer, warning, settings, aparist, cupboard, trend, danger
+    bar_chart, bee_logo, bell, bug, checkup, dashboard, download, hourglass, octagon, plus, refresh, thermometer, warning, settings, aparist, cupboard, trend, danger, moon, sun
 }
 export default assets;

@@ -2,6 +2,7 @@ import HealthMatrixCard from "./HealthMatrixCard"
 import MatrixHeader from "./MatrixHeader"
 import Threat from "./Threat"
 
+
 function HealthMatrix() {
     const matrixs = [
         {
@@ -85,10 +86,10 @@ function HealthMatrix() {
                 </div>
                 <div className="flex flex-col gap-5">
                     {threatMonitor.map((threat, index) => (
-                        <>
-                            <Threat key={index} threat={threat} />
+                        <div key={index}>
+                            <Threat threat={threat} />
 
-                        </>
+                        </div>
                     ))}
                 </div>
             </div>
